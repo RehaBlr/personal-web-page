@@ -1,7 +1,7 @@
-* {
+/* * {
   box-sizing: border-box;
   border: 1px solid green;
-}
+} */
 
 /*/////////////////////////*/
 /*/ ///// App       ////////*/
@@ -38,8 +38,8 @@
 /*/////////////////////////*/
 .radio-btn {
   width: 55px;
-  height: 24px;
-  padding: 3px;
+  height: 18px;
+  padding: 4px;
   background-color: #4731d3;
   border-radius: 50px;
   overflow: hidden;
@@ -118,6 +118,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  color: #7b61ff;
 }
 
 /*/////////////////////////*/
@@ -152,4 +153,92 @@
   border: 2px solid #4338ca;
   border-radius: 5px;
   display: inline-block;
+}
+
+/*/////////////////////////*/
+/*////////  About Hero  /////////*/
+/*/////////////////////////*/
+.hero-line {
+  display: flex;
+  gap: 1vw;
+  justify-content: left;
+  align-items: center;
+  color: #4338ca;
+}
+.line {
+  width: 6vw;
+  height: 0px;
+  border: 1px solid #3730a3;
+}
+
+.hero {
+  display: flex;
+  justify-content: space-between;
+  text-align: left;
+}
+.hero-text h1 {
+  font-size: 48px;
+}
+
+.socialLink {
+  display: flex;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.hireMe {
+  background-color: #3730a3;
+  color: #ffffff;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  margin-right: 0.5rem;
+}
+.githubL {
+  border: 1px solid #3730a3;
+  color: #3730a3;
+  padding: 0.45rem 0.75rem;
+  border-radius: 5px;
+  margin-right: 0.5rem;
+  display: flex;
+}
+
+.githubL img {
+  width: 22px;
+  height: 22px;
+  padding-right: 4px;
+}
+.githubL a {
+  text-decoration: none;
+}
+
+.linkedinL {
+  border: 1px solid #3730a3;
+  color: #3730a3;
+  padding: 0.45rem 0.75rem;
+  border-radius: 5px;
+  margin-right: 0.5rem;
+  display: flex;
+}
+.linkedinL img {
+  width: 22px;
+  height: 22px;
+  padding-right: 4px;
+}
+.linkedinL a {
+  text-decoration: none;
+}
+.profileImg img {
+  border-radius: 20px;
+  max-width: 400px;
+}
+.profileImg {
+  padding: 30px 0px;
+}
+
+.aboutMe {
+  padding-right: 2rem;
+}
+.aboutMe h1 {
+  font-size: 72px;
+  margin: 0;
 }
