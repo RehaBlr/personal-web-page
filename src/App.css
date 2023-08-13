@@ -101,3 +101,55 @@
 .ml-pad {
   padding: 0px 16px 0px 12px;
 }
+
+/*/ ////////////////////////*/
+/*////// LOGO       ////////*/
+/*/ ////////////////////////*/
+
+.logo {
+  font-size: 24px;
+  width: 64px;
+  height: 62px;
+  padding: 10px;
+  background-color: #eeebff;
+  border-radius: 50px;
+  transform: rotate(22deg);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/*/////////////////////////*/
+/*//////// Navbar /////////*/
+/*/////////////////////////*/
+.Navbar {
+  display: flex;
+  /* justify-content: space-around; */
+}
+/*.Navbar div {
+   flex-basis: 50%;
+} */
+.navbarNav {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  flex-shrink: 1;
+  flex-basis: 100%;
+}
+.navbarNav nav {
+  display: inline-block;
+}
+#skill,
+#projects,
+#contactLink {
+  margin-left: 2.7rem;
+  text-decoration: none;
+}
+#contactLink {
+  color: #4338ca;
+  padding: 6px 12px;
+  border: 2px solid #4338ca;
+  border-radius: 5px;
+  display: inline-block;
+}
