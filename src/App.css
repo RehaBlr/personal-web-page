@@ -229,7 +229,7 @@
 }
 .profileImg img {
   border-radius: 20px;
-  max-width: 400px;
+  max-width: 500px;
 }
 .profileImg {
   padding: 30px 0px;
@@ -241,4 +241,33 @@
 .aboutMe h1 {
   font-size: 72px;
   margin: 0;
+}
+/*/////////////////////////*/
+/*//////// skills /////////*/
+/*/////////////////////////*/
+
+.containerSkills {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  border-bottom: 1px solid #bab2e7;
+}
+
+.skillText {
+  display: flex;
+}
+#skills {
+  margin: 30px 0px 0px 0px;
+  padding: 0px;
+  color: #1f2937;
+  font-size: 48px;
+}
+.skillText h3 {
+  margin: 0;
+  margin-top: 15px;
+  color: #4338ca;
+}
+.skillText div {
+  padding-right: 3.1rem;
+  color: #6b7280;
 }
