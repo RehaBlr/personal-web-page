@@ -166,7 +166,7 @@
   color: #4338ca;
 }
 .line {
-  width: 6vw;
+  width: 10%;
   height: 0px;
   border: 1px solid #3730a3;
 }
@@ -270,4 +270,45 @@
 .skillText div {
   padding-right: 3.1rem;
   color: #6b7280;
+}
+/*/////////////////////////*/
+/*//////// Profile ////////*/
+/*/////////////////////////*/
+
+.containerProfile {
+  display: flex;
+  flex-direction: column;
+}
+
+.profile-text {
+  display: flex;
+}
+
+.profile-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.birthday {
+  display: flex;
+}
+.birthday h4,
+.birthday p {
+  margin: 0;
+  padding: 0.5rem 2rem 0.5rem 0;
+}
+.birthday p {
+  width: 80%;
+  align-items: start;
+  padding: 0.5rem 1rem 0.5rem 0;
+
+  /* padding: 1rem 2rem 1rem 0; */
+}
+.birthday h4 {
+  width: 125px;
+
+  /* padding: 1rem 2rem 1rem 0; */
+}
+.profileAbout {
+  margin-left: 2rem;
 }
