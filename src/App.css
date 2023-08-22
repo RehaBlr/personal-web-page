@@ -312,3 +312,47 @@
 .profileAbout {
   margin-left: 2rem;
 }
+
+/*/////////////////////////*/
+/*//////// Project /////////*/
+/*/////////////////////////*/
+.containerProject {
+  display: flex;
+  flex-direction: column;
+  margin-top: 2rem;
+  padding-top: 2rem;
+  border-top: 1px solid #bab2e7;
+}
+.projects {
+  display: flex;
+}
+.projectstech {
+  display: flex;
+}
+.project {
+  margin-right: 4rem;
+}
+.project h3 {
+  color: #4338ca;
+}
+.projectstech {
+  color: #3730a3;
+  display: flex;
+  margin: 18px 0 18px 0;
+}
+.projectstech div {
+  border: 2px solid #3730a3;
+  border-radius: 6px;
+  padding: 6px 18px;
+  margin-right: 6px;
+}
+.project a {
+  margin-right: 2px;
+  /* text-decoration: none; */
+  /* padding-bottom: 0.5px; */
+  /* border-bottom: 1px solid #3730a3; */
+}
+.linka {
+  display: flex;
+  justify-content: space-between;
+}

@@ -5,6 +5,7 @@ import Header from "./components/Header";
 import About from "./components/About";
 import Skills from "./components/Skills";
 import Profile from "./components/Profile";
+import Projects from "./components/Projects";
 
 function App() {
   const [toggle, setToggle] = useState(false);
@@ -19,6 +20,8 @@ function App() {
         <Skills />
 
         <Profile />
+
+        <Projects />
       </div>
     </div>
   );
