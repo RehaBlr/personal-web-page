@@ -1,32 +1,35 @@
+import { useSelector } from "react-redux";
+
 export default function Profile() {
+  const profil_text = useSelector((state) => state.source);
   return (
     <>
       <div className="containerProfile top-line">
         <div>
-          <h2>Profile</h2>
+          <h2>{profil_text.profileText}</h2>
         </div>
         <div className="profile-text">
           <div className="profile-item">
             <div>
-              <h3>Profile</h3>
+              <h3>{profil_text.profileText}</h3>
             </div>
             {/* <div className="pro"> */}
             <div className="pro">
               <div className="birthday">
-                <h4>Birthday</h4>
-                <p>24.03.1995</p>
+                <h4>{profil_text.birthday}</h4>
+                <p>{profil_text.birthdayText}</p>
               </div>
               <div className="birthday">
-                <h4>Residence</h4>
-                <p>Ankara</p>
+                <h4>{profil_text.residence}</h4>
+                <p>{profil_text.residenceText}</p>
               </div>
               <div className="birthday">
-                <h4>Education</h4>
-                <p>Hacettepe Üni. Biyoloji Lisans, 2016</p>
+                <h4>{profil_text.education}</h4>
+                <p>{profil_text.educationText}</p>
               </div>
               <div className="birthday">
-                <h4>Preferred Role</h4>
-                <p>Frontend, UI</p>
+                <h4>{profil_text.preferredRole}</h4>
+                <p>{profil_text.preferredRoleText}</p>
               </div>
             </div>
             {/* <div className="pro1">
@@ -44,15 +47,9 @@ export default function Profile() {
             {/* </div> */}
           </div>
           <div className="profileAbout">
-            <h3>About Me</h3>
-            <p>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam
-              aut, odit laborum aliquam voluptatum nisi mollitia.{" "}
-            </p>
-            <p>
-              Mnima accusamus ratione soluta aperiam sit voluptate? Dicta quod
-              deserunt quam temporibus cumque magnam!
-            </p>
+            <h3>{profil_text.aboutMe}</h3>
+            <p>{profil_text.aboutMeText1}</p>
+            <p>{profil_text.aboutMeText2}</p>
           </div>
         </div>
         <div className="lll"></div>

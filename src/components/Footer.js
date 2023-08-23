@@ -1,8 +1,12 @@
+import { useSelector } from "react-redux";
+
 export default function Footer() {
+  const foot_text = useSelector((state) => state.source);
+
   return (
     <>
       <div className="containercontact">
-        <h3>Let’s work together on your next product.</h3>
+        <h3>{foot_text.footerText}</h3>
         <div className="contactLink">
           <div className="footer-left">
             <img src="./fs-icon/👉.svg" />
@@ -11,7 +15,7 @@ export default function Footer() {
 
           <div className="personalLink">
             <a id="blog_footer" href="#">
-              Personal Blog
+              {foot_text.footerPersonal}
             </a>
             <a id="github_footer" href="https://github.com">
               Github

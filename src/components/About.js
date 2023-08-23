@@ -1,4 +1,8 @@
+import { useSelector } from "react-redux";
+
 export default function About() {
+  const about_text = useSelector((state) => state.source);
+  // console.log("selector header :", header_text.dil);
   return (
     <>
       <div className="hero">
@@ -9,16 +13,12 @@ export default function About() {
               <p>Almila Su</p>
             </div>
             <div className="aboutMe">
-              <h1>Creative thinker Minimalism lover</h1>
-              <p>
-                Hi, I’m Almila. I’m a full-stack developer. If you are looking
-                for a Developer who to craft solid and scalable frontend
-                products with great user experiences. Let’s shake hands with me.
-              </p>
+              <h1>{about_text.introTitle}</h1>
+              <p>{about_text.introText}</p>
             </div>
 
             <div className="socialLink">
-              <div className="hireMe">Hire me</div>
+              <div className="hireMe">{about_text.navHire}</div>
               <div className="githubL">
                 <img src="./fs-icon/github.svg" alt="Github icon" />
                 <a href="https://github.com">Github</a>
