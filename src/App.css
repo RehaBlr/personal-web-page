@@ -7,11 +7,15 @@
 /*/ ///// App       ////////*/
 /*/////////////////////////*/
 .App {
-  background-color: #e0e0e0;
+  /* background-color: #e0e0e0; */
+  background-color: #ffffff;
   transition: all 3s;
   display: flex;
   flex-direction: column;
+  /* max-width: 1440px; */
   align-items: center;
+  /* justify-content: center; */
+  /* align-content: center; */
 }
 .App.dark {
   background-color: #383838;
@@ -20,10 +24,12 @@
 /*////// BodyContainer ////////*/
 /*/////////////////////////*/
 .container {
+  /* height: 97vh; */
+
   display: flex;
   flex-direction: column;
-  max-width: 1280px;
-  padding: 2px 10px 2px 10px;
+  max-width: 1440px;
+  /* padding: 2rem 150px 2rem 150px; */
 }
 /*/ ////////////////////////*/
 /*////// TopBar ////////*/
@@ -32,6 +38,8 @@
   display: flex;
   justify-content: end;
   color: #777;
+  padding-left: 150px;
+  padding-right: 150px;
 }
 /*/////////////////////////*/
 /*/ ///// Darkmode ////////*/
@@ -126,6 +134,8 @@
 /*/////////////////////////*/
 .Navbar {
   display: flex;
+  padding-left: 150px;
+  padding-right: 150px;
   /* justify-content: space-around; */
 }
 /*.Navbar div {
@@ -173,11 +183,19 @@
 
 .hero {
   display: flex;
-  justify-content: space-between;
-  text-align: left;
+  flex-direction: column;
+  /* justify-content: space-between; */
+  /* text-align: left; */
+  align-items: center;
+  padding-left: 150px;
+  padding-right: 150px;
+  padding-bottom: 2rem;
 }
 .hero-text h1 {
   font-size: 48px;
+}
+.her {
+  display: flex;
 }
 
 .socialLink {
@@ -227,16 +245,17 @@
 .linkedinL a {
   text-decoration: none;
 }
-.profileImg img {
-  border-radius: 20px;
-  max-width: 500px;
-}
 .profileImg {
   padding: 30px 0px;
+}
+.profileImg img {
+  border-radius: 20px;
+  max-height: 100%;
 }
 
 .aboutMe {
   padding-right: 2rem;
+  padding-bottom: 1.5rem;
 }
 .aboutMe h1 {
   font-size: 72px;
@@ -250,7 +269,9 @@
   display: flex;
   flex-direction: column;
   text-align: left;
-  border-bottom: 1px solid #bab2e7;
+  padding-top: 2rem;
+  padding-left: 150px;
+  padding-right: 150px;
 }
 
 .skillText {
@@ -271,6 +292,13 @@
   padding-right: 3.1rem;
   color: #6b7280;
 }
+.lll {
+  max-width: 1140px;
+  border-bottom: 1px solid #bab2e7;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  /* border-top: 1px solid #bab2e7; */
+}
 /*/////////////////////////*/
 /*//////// Profile ////////*/
 /*/////////////////////////*/
@@ -278,6 +306,10 @@
 .containerProfile {
   display: flex;
   flex-direction: column;
+  padding-left: 150px;
+  padding-right: 150px;
+  /* padding-top: 6rem;
+  padding-bottom: 6rem; */
 }
 
 .profile-text {
@@ -319,18 +351,22 @@
 .containerProject {
   display: flex;
   flex-direction: column;
-  margin-top: 2rem;
-  padding-top: 2rem;
-  border-top: 1px solid #bab2e7;
+  /* margin-top: 2rem; */
+  /* padding-top: 6rem;*/
+  padding-bottom: 6rem;
+  padding-left: 150px;
+  padding-right: 150px;
 }
 .projects {
   display: flex;
+  justify-content: space-between;
 }
 .projectstech {
   display: flex;
 }
 .project {
-  margin-right: 4rem;
+  width: 300px;
+  /* margin-right: 4rem; */
 }
 .project h3 {
   color: #4338ca;
@@ -355,4 +391,68 @@
 .linka {
   display: flex;
   justify-content: space-between;
+}
+
+/*/////////////////////////*/
+/*//////// footer /////////*/
+/*/////////////////////////*/
+.containercontact {
+  display: flex;
+  flex-direction: column;
+  /* padding-top: 4rem; */
+  padding-bottom: 4rem;
+  background-color: #f9f9f9;
+  padding-left: 150px;
+  padding-right: 150px;
+}
+.containercontact h3 {
+  width: 600px;
+  font-size: 50px;
+  color: #1f2937;
+}
+
+.footer-left a {
+  font-size: 20px;
+  color: #af0c48;
+  text-decoration: none;
+  border-bottom: 1px solid #af0c48;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+.contactLink {
+  display: flex;
+}
+.contactLink div {
+  flex-basis: 50%;
+}
+.personalLink {
+  display: flex;
+  /* justify-content: right; */
+  align-items: center;
+  justify-content: flex-end;
+}
+.footer-left {
+  display: flex;
+  align-items: center;
+}
+#blog_footer {
+  text-decoration: none;
+  padding: 0.625rem;
+  color: #0a0a14;
+  font-size: x-large;
+  font-weight: 700;
+}
+#github_footer {
+  text-decoration: none;
+  padding: 0.625rem;
+  color: #00ab6b;
+  font-size: x-large;
+  font-weight: 700;
+}
+#linkedin_footer {
+  text-decoration: none;
+  padding: 0.625rem;
+  color: #0077b5;
+  font-size: x-large;
+  font-weight: 700;
 }

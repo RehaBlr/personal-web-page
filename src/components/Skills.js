@@ -5,7 +5,6 @@ export default function Skills() {
         <div>
           <h2 id="skills">Skills</h2>
         </div>
-
         <div className="skillText">
           <div>
             <h3>Java Script</h3>
@@ -29,6 +28,7 @@ export default function Skills() {
             </p>
           </div>
         </div>
+        <div className="lll"></div>
       </div>
     </>
   );
