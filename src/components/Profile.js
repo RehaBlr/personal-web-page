@@ -6,12 +6,12 @@ export default function Profile() {
     <>
       <div className="containerProfile top-line">
         <div>
-          <h2>{profil_text.profileText}</h2>
+          <h2 id="profileHeader">{profil_text.profileText}</h2>
         </div>
         <div className="profile-text">
           <div className="profile-item">
             <div>
-              <h3>{profil_text.profileText}</h3>
+              <h3 className="f30">{profil_text.profileText}</h3>
             </div>
             {/* <div className="pro"> */}
             <div className="pro">
@@ -47,7 +47,7 @@ export default function Profile() {
             {/* </div> */}
           </div>
           <div className="profileAbout">
-            <h3>{profil_text.aboutMe}</h3>
+            <h3 className="f30">{profil_text.aboutMe}</h3>
             <p>{profil_text.aboutMeText1}</p>
             <p>{profil_text.aboutMeText2}</p>
           </div>

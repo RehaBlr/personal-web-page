@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "./App.css";
 
 import Header from "./components/Header";
@@ -10,6 +10,18 @@ import Footer from "./components/Footer";
 
 function App() {
   const [toggle, setToggle] = useState(false);
+
+  useEffect(() => {
+    if (localStorage.getItem("darkMode") === null) {
+      localStorage.setItem("darkMode", toggle);
+    } else {
+      setToggle(JSON.parse(localStorage.getItem("darkMode")));
+    }
+
+    if (localStorage.getItem("language") === null) {
+      localStorage.setItem("language", "tr");
+    }
+  }, []);
   // console.log(toggle);
   return (
     <div className={toggle ? "App dark" : "App"}>
@@ -23,7 +35,8 @@ function App() {
         <Profile />
 
         <Projects />
-
+      </div>
+      <div className="footerContainer">
         <Footer />
       </div>
     </div>

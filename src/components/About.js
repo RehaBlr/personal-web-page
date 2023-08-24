@@ -18,14 +18,18 @@ export default function About() {
             </div>
 
             <div className="socialLink">
-              <div className="hireMe">{about_text.navHire}</div>
+              <div className="hireMe inter">{about_text.navHire}</div>
               <div className="githubL">
                 <img src="./fs-icon/github.svg" alt="Github icon" />
-                <a href="https://github.com">Github</a>
+                <a href="https://github.com" className="inter">
+                  Github
+                </a>
               </div>
-              <div className="linkedinL">
+              <div className="linkedinL ">
                 <img src="./fs-icon/LinkedIn.svg" alt="Linkedin icon" />
-                <a href="https://linkedin.com">LinkedIn</a>
+                <a href="https://linkedin.com" className="inter">
+                  LinkedIn
+                </a>
               </div>
             </div>
           </div>

@@ -6,7 +6,7 @@ export default function Projects() {
     <>
       <div className="containerProject">
         <div>
-          <h2>{project_text.projectsTitle}</h2>
+          <h2 id="projects">{project_text.projectsTitle}</h2>
         </div>
         <div className="projects">
           <div className="project">

@@ -35,16 +35,20 @@ export default function Header(props) {
   const header_text = useSelector((state) => state.source);
   console.log("selector header :", header_text.dil);
 
+  const modeOn = () => {
+    console.log("1", !toggle);
+
+    setToggle(!toggle);
+    console.log("2", toggle);
+    localStorage.setItem("darkMode", !toggle);
+  };
   return (
     <>
       <div className="topBar">
-        <div
-          className={toggle ? "radio-btn bg" : "radio-btn"}
-          onClick={() => setToggle(!toggle)}
-        >
+        <div className={toggle ? "radio-btn bg" : "radio-btn"} onClick={modeOn}>
           <div className={toggle ? "radio-inner active" : "radio-inner"}></div>
         </div>
-        <div className="ml ml-dark" onClick={() => setToggle(!toggle)}>
+        <div className="ml ml-dark" onClick={modeOn}>
           {toggle === false ? header_text.dark_mode : header_text.light_mode}
         </div>
         <div className="ml ml-pad">|</div>
@@ -67,7 +71,7 @@ export default function Header(props) {
             <a id="skill" href="#skills">
               {header_text.navSkills}
             </a>
-            <a id="projects" href="#projects">
+            <a id="project" href="#projects">
               {header_text.navProjects}
             </a>
             <a id="contactLink" href="#">

@@ -4,6 +4,15 @@
 } */
 
 /*/////////////////////////*/
+/*/ ///// Font ayarları ///*/
+/*/////////////////////////*/
+.inter {
+  font-family: inter;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+/*/////////////////////////*/
 /*/ ///// App       ////////*/
 /*/////////////////////////*/
 .App {
@@ -18,7 +27,7 @@
   /* align-content: center; */
 }
 .App.dark {
-  background-color: #383838;
+  background-color: #252128;
 }
 /*/////////////////////////*/
 /*////// BodyContainer ////////*/
@@ -96,10 +105,10 @@
 .ml {
   font-family: Inter;
   font-size: 15px;
-  font-style: normal;
+  /* font-style: normal; */
   font-weight: 700;
   letter-spacing: 0.1rem;
-  line-height: 18px;
+  /* line-height: 18px; */
   /* padding-left: 1rem; */
   /* font-weight: bold; */
 }
@@ -121,6 +130,8 @@
 /*/ ////////////////////////*/
 
 .logo {
+  font-family: inter;
+  font-weight: 600;
   font-size: 24px;
   width: 64px;
   height: 62px;
@@ -149,6 +160,10 @@
    flex-basis: 50%;
 } */
 .navbarNav {
+  font-family: inter;
+  font-weight: 500;
+  font-size: 18px;
+  color: #6b7280;
   display: flex;
   justify-content: right;
   align-items: center;
@@ -159,7 +174,7 @@
   display: inline-block;
 }
 #skill,
-#projects,
+#project,
 #contactLink {
   margin-left: 2.7rem;
   text-decoration: none;
@@ -176,6 +191,9 @@
 /*////////  About Hero  /////////*/
 /*/////////////////////////*/
 .hero-line {
+  font-family: inter;
+  font-weight: 500;
+  font-size: 20px;
   display: flex;
   gap: 1vw;
   justify-content: left;
@@ -266,8 +284,19 @@
   padding-bottom: 1.5rem;
 }
 .aboutMe h1 {
+  color: #1f2937;
+  font-family: inter;
+  font-weight: 700;
   font-size: 72px;
   margin: 0;
+}
+
+.aboutMe p {
+  max-width: 34.5rem;
+  color: #6b7280;
+  font-family: inter;
+  font-weight: 400;
+  font-size: 18px;
 }
 /*/////////////////////////*/
 /*//////// skills /////////*/
@@ -286,15 +315,27 @@
   display: flex;
 }
 #skills {
+  font-family: inter;
+  font-weight: 600;
   margin: 30px 0px 0px 0px;
   padding: 0px;
   color: #1f2937;
   font-size: 48px;
 }
 .skillText h3 {
+  font-family: inter;
+  font-weight: 500;
+  font-size: 30px;
+
   margin: 0;
   margin-top: 15px;
   color: #4338ca;
+}
+.skillText p {
+  font-family: inter;
+  font-weight: 400;
+  font-size: 12px;
+  color: #6b7280;
 }
 .skillText div {
   padding-right: 3.1rem;
@@ -310,7 +351,12 @@
 /*/////////////////////////*/
 /*//////// Profile ////////*/
 /*/////////////////////////*/
-
+#profileHeader {
+  font-family: inter;
+  font-size: 48px;
+  font-weight: 600;
+  color: #1f2937;
+}
 .containerProfile {
   display: flex;
   flex-direction: column;
@@ -328,6 +374,12 @@
   display: flex;
   flex-direction: column;
 }
+.f30 {
+  font-family: inter;
+  font-size: 30px;
+  font-weight: 500;
+  color: #4338ca;
+}
 
 .birthday {
   display: flex;
@@ -341,16 +393,30 @@
   width: 80%;
   align-items: start;
   padding: 0.5rem 1rem 0.5rem 0;
+  font-family: inter;
+  font-size: 18px;
+  font-weight: 400;
+  color: #000;
 
   /* padding: 1rem 2rem 1rem 0; */
 }
 .birthday h4 {
   width: 125px;
+  font-family: inter;
+  font-size: 18px;
+  font-weight: 600;
+  color: #000;
 
   /* padding: 1rem 2rem 1rem 0; */
 }
 .profileAbout {
   margin-left: 2rem;
+}
+.profileAbout p {
+  font-family: inter;
+  font-size: 18px;
+  font-weight: 400;
+  color: #6b7280;
 }
 
 /*/////////////////////////*/
@@ -365,6 +431,12 @@
   padding-left: 150px;
   padding-right: 150px;
 }
+#projects {
+  font-family: inter;
+  font-size: 48px;
+  font-weight: 600;
+  color: #000;
+}
 .projects {
   display: flex;
   justify-content: space-between;
@@ -377,20 +449,43 @@
   /* margin-right: 4rem; */
 }
 .project h3 {
+  font-family: inter;
+  font-size: 30px;
+  font-weight: 500;
   color: #4338ca;
 }
 .projectstech {
+  font-family: inter;
+  font-size: 14px;
+  font-weight: 500;
   color: #3730a3;
   display: flex;
+  flex-wrap: wrap;
   margin: 18px 0 18px 0;
 }
 .projectstech div {
+  font-family: inter;
+  font-size: 16px;
+  font-weight: 500;
+  color: #3730a3;
   border: 2px solid #3730a3;
   border-radius: 6px;
   padding: 6px 18px;
   margin-right: 6px;
+  margin-bottom: 4px;
+}
+.project p {
+  font-family: inter;
+  font-size: 14px;
+  font-weight: 400;
+  color: #6b7280;
+  margin-right: 10px;
 }
 .project a {
+  font-family: inter;
+  font-size: 16px;
+  font-weight: 500;
+  color: #3730a3;
   margin-right: 2px;
   /* text-decoration: none; */
   /* padding-bottom: 0.5px; */
@@ -404,28 +499,45 @@
 /*/////////////////////////*/
 /*//////// footer /////////*/
 /*/////////////////////////*/
+.footerContainer {
+  transition: all 1s;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: #f9f9f9;
+  /* background-color: yellowgreen; */
+}
 .containercontact {
+  width: 1140px;
   display: flex;
   flex-direction: column;
   /* padding-top: 4rem; */
   padding-bottom: 4rem;
-  background-color: #f9f9f9;
+
   padding-left: 150px;
   padding-right: 150px;
 }
+
 .containercontact h3 {
+  font-family: inter;
+  font-size: 42px;
+  font-weight: 600;
+  color: #1f2937;
   width: 600px;
-  font-size: 50px;
+  /* font-size: 50px; */
   color: #1f2937;
 }
 
 .footer-left a {
+  font-family: inter;
+  font-weight: 500;
   font-size: 20px;
   color: #af0c48;
   text-decoration: none;
   border-bottom: 1px solid #af0c48;
   font-weight: 500;
   letter-spacing: 1px;
+  margin-left: 0.5rem;
 }
 .contactLink {
   display: flex;
@@ -444,23 +556,151 @@
   align-items: center;
 }
 #blog_footer {
+  font-family: inter;
+  font-weight: 500;
+  font-size: 18px;
   text-decoration: none;
   padding: 0.625rem;
   color: #0a0a14;
-  font-size: x-large;
-  font-weight: 700;
 }
 #github_footer {
+  font-family: inter;
+  font-weight: 500;
+  font-size: 18px;
   text-decoration: none;
   padding: 0.625rem;
   color: #00ab6b;
-  font-size: x-large;
-  font-weight: 700;
 }
 #linkedin_footer {
+  font-family: inter;
+  font-weight: 500;
+  font-size: 18px;
   text-decoration: none;
   padding: 0.625rem;
   color: #0077b5;
-  font-size: x-large;
-  font-weight: 700;
+}
+
+/*/////////////////////////*/
+/*//////// darkmode /////////*/
+/*/////////////////////////*/
+.dark .ml-dark {
+  color: #d9d9d9;
+}
+.dark .dil2 {
+  color: #777777;
+}
+.dark .dil {
+  color: #bab2e7;
+}
+.dark .logo {
+  background-color: #4731d3;
+  color: #8f88ff;
+}
+
+.dark #skill,
+.dark #project {
+  color: #6b7280;
+}
+.dark #contactLink {
+  background-color: #ffffff;
+  color: #3730a3;
+}
+
+.dark .hero-line .line {
+  border-color: #bab2e7;
+}
+.dark .hero-line p {
+  color: #b7aaff;
+}
+.dark .aboutMe h1 {
+  color: #aebccf;
+}
+.dark .aboutMe p {
+  color: #ffffff;
+}
+
+.dark .hireMe {
+  background-color: #e1e1ff;
+  color: #000000;
+  border-color: #e1e1ff;
+}
+/*///////////////////*/
+.dark .linkedinL img {
+  /* filter: opacity(0.4); */
+}
+.dark .githubL,
+.dark .linkedinL {
+  border-color: #e1e1ff;
+}
+
+.dark .socialLink a {
+  color: #e1e1ff;
+}
+.dark #skills {
+  color: #aebccf;
+}
+
+.dark .skillText h3 {
+  color: #b7aaff;
+}
+.dark .skillText p {
+  color: #ffffff;
+}
+.dark #profileHeader {
+  color: #aebccf;
+}
+
+.dark .f30 {
+  color: #b7aaff;
+}
+.dark .pro h4 {
+  color: #ffffff;
+}
+.dark .pro p {
+  color: #ffffff;
+}
+.dark .profileAbout p {
+  color: #ffffff;
+}
+
+.dark #projects {
+  color: #aebccf;
+}
+
+.dark .projects h3 {
+  color: #cfcbff;
+}
+.dark .projects p {
+  color: #ffffff;
+}
+.dark .projectstech div {
+  color: #8f88ff;
+  border-color: #8f88ff;
+  background-color: #383838;
+}
+
+.dark .linka a {
+  color: #e1e1ff;
+}
+.dark .footerContainer {
+  background-color: #141414;
+}
+.dark .containercontact h3 {
+  color: #aebccf;
+}
+
+.dark .footer-left a {
+  color: #bab2e7;
+  border-color: #bab2e7;
+}
+
+.dark #blog_footer {
+  color: #e1e1ff;
+}
+
+.dark #github_footer {
+  color: #17d18b;
+}
+.dark #linkedin_footer {
+  color: #0ba6f6;
 }
