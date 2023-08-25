@@ -13,7 +13,7 @@ export const source = {
 
     introTitle: "Yaratıcı düşünür Minimalizm aşığı",
     introText:
-      "Merhaba ben Almila. Ben tam kapsamlı bir geliştiriciyim. Mükemmel kullanıcı deneyimleriyle sağlam ve ölçeklenebilir ön uç ürünleri üretecek bir Geliştirici arıyorsanız. Benimle el sıkışalım.",
+      "Merhaba ben Reha. Ben tam kapsamlı bir geliştiriciyim. Mükemmel kullanıcı deneyimleriyle sağlam ve ölçeklenebilir ön uç ürünleri üretecek bir Geliştirici arıyorsanız. Benimle el sıkışalım.",
 
     navHire: "İrtibata Geç",
     github: "Github",
@@ -38,10 +38,10 @@ export const source = {
     birthdayText: "24.03.1995",
 
     residence: "ikametgâh",
-    residenceText: "Ankara",
+    residenceText: "Eskişehir",
 
     education: "Eğitim",
-    educationText: "Hacettepe Üni. Biyoloji Lisans, 2016",
+    educationText: "Karadeniz Teknik Üni. Bilgisayar Müh. Lisans, 2022",
 
     preferredRole: "Tercih Edilen Rol",
     preferredRoleText: "Frontend, UI",
@@ -51,7 +51,38 @@ export const source = {
     projeText:
       "Lorem ipsum dolor sit amet. Rem voluptatem rerum cum obcaecati fugit qui obcaecati aliquam sed aspernatur rerum a labore fugiat aut blanditiis dolor. Est eveniet deserunt aut nulla quaerat ut natus error est voluptates placeat sit error odit.",
     viewSite: "Siteyi Görüntüle",
+    projects: [
+      {
+        imgSrc: "./fs-image/calculator.png",
+        projectName: "Hesap Makinesi",
+        projeText:
+          "Lorem ipsum dolor sit amet. Rem voluptatem rerum cum obcaecati fugit qui obcaecati aliquam sed aspernatur rerum a labore fugiat aut blanditiis dolor. Est eveniet deserunt aut nulla quaerat ut natus error est voluptates placeat sit error odit.",
 
+        gitLink: "https://github.com/RehaBlr/fsweb-s10g1-reducer-calculator",
+        vercelLink: "https://fsweb-s10g1-reducer-calculator-tan.vercel.app/",
+        viewSite: "Siteyi Görüntüle",
+      },
+      {
+        imgSrc: "./fs-image/Rectangle-42.png",
+        projectName: "Workintech",
+        projeText:
+          "Lorem ipsum dolor sit amet. Rem voluptatem rerum cum obcaecati fugit qui obcaecati aliquam sed aspernatur rerum a labore fugiat aut blanditiis dolor. Est eveniet deserunt aut nulla quaerat ut natus error est voluptates placeat sit error odit.",
+
+        gitLink: "https://github.com",
+        vercelLink: "#",
+        viewSite: "Siteyi Görüntüle",
+      },
+      {
+        imgSrc: "./fs-image/Rectangle-43.png",
+        projectName: "Workintech",
+        projeText:
+          "Lorem ipsum dolor sit amet. Rem voluptatem rerum cum obcaecati fugit qui obcaecati aliquam sed aspernatur rerum a labore fugiat aut blanditiis dolor. Est eveniet deserunt aut nulla quaerat ut natus error est voluptates placeat sit error odit.",
+
+        gitLink: "https://github.com",
+        vercelLink: "#",
+        viewSite: "Siteyi Görüntüle",
+      },
+    ],
     footerText: "Bir sonraki ürününüz üzerinde birlikte çalışalım.",
 
     footerPersonal: "Kişisel Blog",
@@ -66,7 +97,7 @@ export const source = {
 
     introTitle: "Creative thinker  Minimalism lover",
     introText:
-      "Hi, I’m Almila. I’m a full-stack developer. If you are looking for a Developer who to craft solid and scalable frontend products with great user experiences. Let’s shake hands with me.",
+      "Hi, I’m Reha. I’m a full-stack developer. If you are looking for a Developer who to craft solid and scalable frontend products with great user experiences. Let’s shake hands with me.",
 
     navHire: "Hire me",
     github: "Github",
@@ -86,10 +117,10 @@ export const source = {
     birthdayText: "24.03.1995",
 
     residence: "Residence",
-    residenceText: "Ankara",
+    residenceText: "Eskişehir",
 
     education: "Education",
-    educationText: "Hacettepe Üni. Biyoloji Lisans, 2016",
+    educationText: "Karadeniz Teknik Üni. Computer Engineer. 2022",
 
     preferredRole: "Preferred Role",
     preferredRoleText: "Frontend, UI",
@@ -101,10 +132,43 @@ export const source = {
       "Mnima accusamus ratione soluta aperiam sit voluptate? Dicta quod deserunt quam temporibus cumque magnam!",
 
     projectsTitle: "Projects",
-    projectName: "Workintech",
+    projectName: "Calculator",
     projeText:
       "Lorem ipsum dolor sit amet. Rem voluptatem rerum cum obcaecati fugit qui obcaecati aliquam sed aspernatur rerum a labore fugiat aut blanditiis dolor. Est eveniet deserunt aut nulla quaerat ut natus error est voluptates placeat sit error odit.",
     viewSite: "View Site",
+
+    projects: [
+      {
+        imgSrc: "./fs-image/calculator.png",
+        projectName: "Calculator",
+        projeText:
+          "Lorem ipsum dolor sit amet. Rem voluptatem rerum cum obcaecati fugit qui obcaecati aliquam sed aspernatur rerum a labore fugiat aut blanditiis dolor. Est eveniet deserunt aut nulla quaerat ut natus error est voluptates placeat sit error odit.",
+
+        gitLink: "https://github.com/RehaBlr/fsweb-s10g1-reducer-calculator",
+        vercelLink: "https://fsweb-s10g1-reducer-calculator-tan.vercel.app/",
+        viewSite: "View Site",
+      },
+      {
+        imgSrc: "./fs-image/Rectangle-42.png",
+        projectName: "Workintech",
+        projeText:
+          "Lorem ipsum dolor sit amet. Rem voluptatem rerum cum obcaecati fugit qui obcaecati aliquam sed aspernatur rerum a labore fugiat aut blanditiis dolor. Est eveniet deserunt aut nulla quaerat ut natus error est voluptates placeat sit error odit.",
+
+        gitLink: "https://github.com",
+        vercelLink: "#",
+        viewSite: "View Site",
+      },
+      {
+        imgSrc: "./fs-image/Rectangle-43.png",
+        projectName: "Workintech",
+        projeText:
+          "Lorem ipsum dolor sit amet. Rem voluptatem rerum cum obcaecati fugit qui obcaecati aliquam sed aspernatur rerum a labore fugiat aut blanditiis dolor. Est eveniet deserunt aut nulla quaerat ut natus error est voluptates placeat sit error odit.",
+
+        gitLink: "https://github.com",
+        vercelLink: "#",
+        viewSite: "View Site",
+      },
+    ],
 
     footerText: "Let’s work together on your next product.",
 

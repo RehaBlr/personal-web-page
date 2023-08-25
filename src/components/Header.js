@@ -4,7 +4,15 @@ import { swit } from "../store/actions";
 import { useDispatch, useSelector } from "react-redux";
 import { source } from "../languages/languageSource";
 
+import { ToastContainer, toast } from "react-toastify";
+
 export default function Header(props) {
+  const notifyDark = () => toast("Dark Mode On");
+  const notifyLight = () => toast("Light Mode On");
+
+  const notifyEn = () => toast("Switched to English");
+  const notifyTr = () => toast("Türkçe' ye geçildi");
+
   const { toggle, setToggle } = props;
   const [toggleDil, setToggleDil] = useState(false);
 
@@ -15,6 +23,9 @@ export default function Header(props) {
   const [dil, setDil] = useState("TÜRKÇE");
   const [dil2, setDil2] = useState("'YE GEÇ");
 
+  const header_text = useSelector((state) => state.source);
+  // console.log("selector header :", header_text.dil);
+
   function handleSwitch() {
     if (dil === "TÜRKÇE") {
       setDil3("en");
@@ -23,6 +34,7 @@ export default function Header(props) {
       setDil("SWİCTH TO ");
       setDil2(" ENGLİSH");
       setToggleDil(true);
+      notifyTr();
     } else {
       setDil3("tr");
       dispatch(swit(dil3, setData));
@@ -30,17 +42,17 @@ export default function Header(props) {
       setDil("TÜRKÇE");
       setDil2("'YE GEÇ");
       setToggleDil(false);
+      notifyEn();
     }
   }
-  const header_text = useSelector((state) => state.source);
-  console.log("selector header :", header_text.dil);
 
   const modeOn = () => {
-    console.log("1", !toggle);
+    // console.log("1", !toggle);
 
     setToggle(!toggle);
-    console.log("2", toggle);
+    // console.log("2", toggle);
     localStorage.setItem("darkMode", !toggle);
+    toggle ? notifyLight() : notifyDark();
   };
   return (
     <>
@@ -64,7 +76,7 @@ export default function Header(props) {
           <img src="./fs-logo/logo.svg" alt="Logo" />
         </div> */}
         <div className="logo">
-          <div>A</div>
+          <div>R</div>
         </div>
         <div className="navbarNav">
           <nav>

@@ -448,6 +448,10 @@
   width: 300px;
   /* margin-right: 4rem; */
 }
+/* .project img {
+  max-width: fit-content;
+  height: 180px;
+} */
 .project h3 {
   font-family: inter;
   font-size: 30px;

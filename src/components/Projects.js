@@ -9,48 +9,24 @@ export default function Projects() {
           <h2 id="projects">{project_text.projectsTitle}</h2>
         </div>
         <div className="projects">
-          <div className="project">
-            <img src="./fs-image/Rectangle-41.png" />
-            <h3>{project_text.projectName}</h3>
-            <p>{project_text.projeText}</p>
-            <div className="projectstech">
-              <div>React</div>
-              <div>Redux</div>
-              <div>Axios</div>
-            </div>
-            <div className="linka">
-              <a href="https://github.com">Github</a>{" "}
-              <a href="#">{project_text.viewSite}</a>
-            </div>
-          </div>
-          <div className="project">
-            <img src="./fs-image/Rectangle-42.png" />
-            <h3>{project_text.projectName}</h3>
-            <p>{project_text.projeText}</p>
-            <div className="projectstech">
-              <div>React</div>
-              <div>Redux</div>
-              <div>Axios</div>
-            </div>
-            <div className="linka">
-              <a href="https://github.com">Github</a>{" "}
-              <a href="#">{project_text.viewSite}</a>
-            </div>
-          </div>
-          <div className="project">
-            <img src="./fs-image/Rectangle-43.png" />
-            <h3>{project_text.projectName}</h3>
-            <p>{project_text.projeText}</p>
-            <div className="projectstech">
-              <div>React</div>
-              <div>Redux</div>
-              <div>Axios</div>
-            </div>
-            <div className="linka">
-              <a href="https://github.com">Github</a>{" "}
-              <a href="#">{project_text.viewSite}</a>
-            </div>
-          </div>
+          {project_text.projects.map((project, ind) => {
+            return (
+              <div className="project" key={ind}>
+                <img src={project.imgSrc} />
+                <h3>{project.projectName}</h3>
+                <p>{project.projeText}</p>
+                <div className="projectstech">
+                  <div>React</div>
+                  <div>Redux</div>
+                  <div>Axios</div>
+                </div>
+                <div className="linka">
+                  <a href={project.gitLink}>Github</a>{" "}
+                  <a href={project.vercelLink}>{project.viewSite}</a>
+                </div>
+              </div>
+            );
+          })}
         </div>
       </div>
     </>

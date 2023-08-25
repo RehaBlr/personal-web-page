@@ -10,17 +10,17 @@ export default function Footer() {
         <div className="contactLink">
           <div className="footer-left">
             <img src="./fs-icon/👉.svg" />
-            <a href="#">almilasucode@gmail.com</a>
+            <a href="#">rehablr26@gmail.com</a>
           </div>
 
           <div className="personalLink">
             <a id="blog_footer" href="#">
               {foot_text.footerPersonal}
             </a>
-            <a id="github_footer" href="https://github.com">
+            <a id="github_footer" href="https://github.com/RehaBlr">
               Github
             </a>
-            <a id="linkedin_footer" href="https://linkedin.com">
+            <a id="linkedin_footer" href="https://linkedin.com/in/reha-bilir">
               Linkedin
             </a>
           </div>

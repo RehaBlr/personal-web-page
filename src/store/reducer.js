@@ -11,7 +11,7 @@ export function reducer(state = initialStore, action) {
     lan === "tr" ? setdata(source.tr) : setdata(source.en);
 
     // setdata(veri.en);
-    console.log("swit kısmındayız", lan);
+    // console.log("swit kısmındayız", lan);
     if (lan === "tr") {
       return { ...initialStore, source: source.tr };
     } else {

@@ -8,6 +8,9 @@ import Profile from "./components/Profile";
 import Projects from "./components/Projects";
 import Footer from "./components/Footer";
 
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+
 function App() {
   const [toggle, setToggle] = useState(false);
 
@@ -25,6 +28,11 @@ function App() {
   // console.log(toggle);
   return (
     <div className={toggle ? "App dark" : "App"}>
+      <ToastContainer
+        position="top-left"
+        autoClose={2000}
+        theme={toggle ? "dark" : "light"}
+      />
       <div className="container">
         <Header toggle={toggle} setToggle={setToggle} />
 
